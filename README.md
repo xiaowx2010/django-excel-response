@@ -16,7 +16,7 @@ thanks to the StringIO library.
 Installation
 ============
 
-::
+
 
     pip install django-excel-response xlwt
 
@@ -24,7 +24,7 @@ Installation
 Usage
 =====
 
-::
+
 
     from excel_response import ExcelResponse
 
@@ -33,7 +33,7 @@ Usage
         return ExcelResponse(objs)
 
 
-or::
+or
 
     from excel_response import ExcelResponse
 
