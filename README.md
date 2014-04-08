@@ -44,3 +44,10 @@ or
             [23,67]
         ]
         return ExcelResponse(data, 'my_data')
+        
+or
+
+    from excel_response import ExcelResponse
+    def export_excel(request):
+        objs = TranOrder.objects.raw(u"select '' as id, `usage` as 用途, model as 配置, count as 数量 from tran_order")
+        return ExcelResponse(objs, u'文件名'.encode('gb2312'))
